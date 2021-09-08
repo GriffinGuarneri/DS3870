@@ -3,6 +3,7 @@ $('#btnTest').click(function() {
     let decTotalHours = $('#txtHours').val();
     let decRate = $('#txtPayRate').val();
     console.log(decTotalHours * decRate);
+<<<<<<< Updated upstream
 });
 $('#cboEmployeeType').change(function() {
     if($('#cboEmployeeType').val() == 'FULL'){
@@ -12,3 +13,7 @@ $('#cboEmployeeType').change(function() {
         $('#divHours').slideDown();
     }
 })
+=======
+    
+});
+>>>>>>> Stashed changes
