@@ -4,21 +4,25 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Blog</title>
+        <title>Login</title>
         <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+        <link rel="stylesheet" href="css/lib/yeti.min.css">
+        <link rel="stylesheet" href="css/lib/style.css">
     </head>
-    <body style="background: blue;">
-        <div id="drawer" class="row">
-            <div class="col-6 offset-3 card mt-3" id="profile">
-                <h3 class="text-center"><a href="mailto:gmguarneri42@tntech.edu">Griffin Guarneri</a></h3>
-                <h2 style="text-align:center">Student</h2>
-                <h2>Profile</h2>
-                <p>Phone: (615)970-9956</p>
-                <p>Address: 304 Boxbury Ct. Old Hickory, TN 37138</p>
-                <p>Assignment 4</p>
-                <input id="txtPayRate">
-                <input id="txtHours">
-                <button type="button" id="btnTest" class="btn btn-warning mb-3">Calculate</button>
+    <body>
+        <div class="wrapper">
+            <div class="card col-4 offset-4 mt-5">
+                <h1 class="text-center mt-3">Login</h1>
+                <form id="frmLogin">
+                    <div class="form-group">
+                        <label for="txtEmail" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="txtEmail" placeholder="JaneDoe@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="txtPassword" placeholder="MyReallyAwesomePassword">
+                    </div>
+                </form>
             </div>
         </div>
         <script src="js/lib/jquery-3.6.0.min.js"></script>
