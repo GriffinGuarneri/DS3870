@@ -38,6 +38,8 @@ $(document).on('click', '.btnCalculateGoalPay', function() {
 
 })
 
+
 $(document).on('click', '.btnSwitchViews', function() {
-    
+    $('#divEmployeeCards').slideUp();
+    $('#divEmployeeTable').slideUp();
 })

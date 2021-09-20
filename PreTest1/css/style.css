@@ -5,3 +5,20 @@ body {
     margin: 0px;
     background-size: auto;
 }
+
+#divEmployeeCards  {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#divEmployeeCards  > .col-3 {
+    display: inline-block;
+}
+
+
+#divEmployeeCards::-webkit-scrollbar {
+    display: none;
+}
