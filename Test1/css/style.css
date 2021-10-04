@@ -1,0 +1,36 @@
+body {
+    background-image: url("../images/background.jpg");
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-size: auto;
+}
+
+.Container {
+    display:Flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProfileImage {
+    flex-basis: 40%;
+}
+
+.Text {
+    padding-left: 10px;
+}
+
+.Container2 {
+    display:Flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#divEmployeeCards {
+    flex-basis: 50%;
+}
+
+#divEmployeeTable {
+    padding-left: 10px;
+    background: transparent;
+}

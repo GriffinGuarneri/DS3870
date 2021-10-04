@@ -9,7 +9,7 @@ function buildEmployeeCard(){
     $.each(arrEmployees,function(i,person){
         if(person.FirstName != 'John'){
             let strHTML = '<div class="card col-3 mt-5 ml-3">';
-            strHTML += '<img src="images/profile.png" alt="Profile Image" style="margin:auto; max-width:100%;">';
+            strHTML += '<img src="images/profile.png" alt="Profile Image" style="margin:auto; max-width:100%;"></img>';
             strHTML += '<h3 class="text-center">' + person.FirstName + ' ' + person.LastName + '</h3>';
             strHTML += '<h4 class="text-center">' + person.Title + '</h4>';
             strHTML += '<h4 class="mt-3">Contact Details</h4>';
@@ -26,7 +26,7 @@ function buildEmployeeCard(){
             strHTML += '<label class="mr-2">Goal Pay: </label>';
             strHTML += '<input class="txtHours">';
             strHTML += '</div>';
-            strHTML += '<button class="btn btn-primary mt-3 mb-2 btn-block btnCalculateGoalPay">Find Hours for Goal</button>'
+            strHTML += '<button class="btn btn-primary mt-3 mb-5 btn-block btnCalculateGoalPay">Find Hours for Goal</button>'
             $('#divEmployeeCards').append(strHTML);
             $('#tblEmployees tbody').append('<tr><td>' + person.FirstName + '</td><td>' + person.LastName + '</td></tr>');
         }
