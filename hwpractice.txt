@@ -1,0 +1,6 @@
+hw practice
+
+string strQuery = "SELECT FirstName, LastName, CodeName FROM tblEmployees"
+
+string strQuery = "SELECT FirstName, LastName, City, State, Agency Name FROM
+tblEmployees LEFT JOIN tblAgencies ON tblEmployees.Agency = tblAgencies.AgencyID"

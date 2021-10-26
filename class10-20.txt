@@ -1,0 +1,33 @@
+string strQuery = "INSERT INTO tblEmployees VALUES(@FirstName,@LastName,@CodeName,@Street,@City,@State,@ZIP,@Country,@Agency)";
+//string strQuery = "UPDATE tblEmployees SET FirstName = @FirstName WHERE CodeName = @CodeName";
+DataSet dsSpyAgencies = new DataSet ();
+string strConnection = "Server...
+try
+{
+	using (SqlConnection conSpyAgencies = new SqlConnection(strConnection))
+	using (SqlCommand comSpyAgencies = new SqlCommand(strQuery, conSpyAgencies))
+	{
+		SqlParameter parFirstName = new SqlParameter("FirstName", SqlDbType.VarChar);
+		parFirstName.Value = "Mallory";
+		comSpyAgencies.Parameters.Add(parFirstName);
+
+		SqlParameter parLastName = new SqlParameter("LastName", SqlDbType.VarChar);
+		parLastName.Value = "Archer";
+		comSpyAgencies.Parameters.Add(parLastName);
+
+		SqlParameter parCodeName = new SqlParameter("CodeName", SqlDbType.VarChar);
+		parCodeName.Value = "Duchess";
+		comSpyAgencies.Parameters.Add(parCodeName);
+
+
+		comSpyAgencies.Connection = conSpyAgencies;
+		comSpyAgencies.CommandText = strQuery;
+		conSpyAgencies.Open();
+		comSpyAgencies.ExecuteNonQuery();
+		conSpyAgencies.Close();
+	}
+}
+catch (Exception ex)
+{
+	return new OkObjectResult(ex.Message
+}
